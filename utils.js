@@ -3,7 +3,7 @@ const path = require("path");
 
 function readFile(dirname, isTest) {
   return fs.readFileSync(
-    path.join(dirname, isTest ? "test.txt" : "input.txt"),
+    path.join(`${dirname}/inputs`, isTest ? "test.txt" : "input.txt"),
     "utf-8"
   );
 }
